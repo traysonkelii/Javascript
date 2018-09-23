@@ -1,10 +1,12 @@
 
 
-const divideAndConquer = function (array, sLeft = [], sRight = []) {
+const divideAndConquer = function (array) {
     let length = array.length;
     let split = length / 2;
     let left = array.slice(0, split);
     let right = array.slice(split);
+    let sLeft = [];
+    let sRight = [];
 
     if (left.length < 3) {
         if (left.length == 1) {
